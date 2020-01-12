@@ -27,6 +27,9 @@ var app = new Vue({
     },
     updateName: function(e) {
       this.name = e.target.value;
+    },
+    logMessage: function(e){
+      console.log("Hello world")
     }
   }
 });

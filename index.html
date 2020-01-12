@@ -39,6 +39,12 @@
         {{coords.x}}, {{coords.y}}
       </div>
       <input type="text" @keyup="updateName" />
+      <input type="text" v-model="name" />
+      <div>
+        <button @click.alt="logMessage">alt-Click me</button>
+        <button @click.shift="logMessage">shift-Click me</button>
+      </div>
+      <a href="https://google.com" @click.prevent="logMessage">Google</a>
     </div>
     <script src="app.js"></script>
   </body>
